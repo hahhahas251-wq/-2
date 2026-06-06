@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мой Прикольный Сайт v1.0</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Привет, я <span id="name">ТвойНик</span> 👾</h1>
+    <button id="chaosBtn">ВКЛЮЧИТЬ ХАОС</button>
+  </header>
+
+  <main>
+    <section class="fun-section">
+      <h2>Нажми на кнопки, если не боишься</h2>
+      <div class="buttons">
+        <button onclick="randomJoke()">Рандомная шутка</button>
+        <button onclick="rickroll()">Не нажимай сюда</button>
+        <button onclick="changeColor()">Поменять цвета</button>
+        <button onclick="matrixRain()">Матрица</button>
+      </div>
+    </section>
+
+    <div id="jokeContainer" class="joke"></div>
+  </main>
+
+  <footer>
+    <p>Made with ❤️ и кринжем</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
