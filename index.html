@@ -1,35 +1,74 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Мой Прикольный Сайт v1.0</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <h1>Привет, я <span id="name">ТвойНик</span> 👾</h1>
-    <button id="chaosBtn">ВКЛЮЧИТЬ ХАОС</button>
-  </header>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  <main>
-    <section class="fun-section">
-      <h2>Нажми на кнопки, если не боишься</h2>
-      <div class="buttons">
-        <button onclick="randomJoke()">Рандомная шутка</button>
-        <button onclick="rickroll()">Не нажимай сюда</button>
-        <button onclick="changeColor()">Поменять цвета</button>
-        <button onclick="matrixRain()">Матрица</button>
-      </div>
-    </section>
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  color: #fff;
+  min-height: 100vh;
+  transition: all 0.4s;
+}
 
-    <div id="jokeContainer" class="joke"></div>
-  </main>
+header {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: rgba(0,0,0,0.3);
+}
 
-  <footer>
-    <p>Made with ❤️ и кринжем</p>
-  </footer>
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
 
-  <script src="script.js"></script>
-</body>
-</html>
+#chaosBtn {
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  background: #ff00ff;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 0 20px #ff00ff;
+  transition: all 0.3s;
+}
+
+#chaosBtn:hover {
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 0 40px #00ffff;
+}
+
+.fun-section {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.buttons button {
+  margin: 10px;
+  padding: 15px 25px;
+  font-size: 1.1rem;
+  background: #00ffcc;
+  color: #000;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.buttons button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 255, 204, 0.4);
+}
+
+.joke {
+  margin: 2rem auto;
+  max-width: 600px;
+  padding: 20px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 15px;
+  min-height: 80px;
+  font-size: 1.3rem;
+  text-align: center;
+}
